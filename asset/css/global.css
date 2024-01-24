@@ -75,10 +75,36 @@ header {
   padding-right: 7px;
 }
 
-.message-box a {
+.message-box .mess-box {
   border: 1px solid #e2e1e1;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 14px 30px;
   font-weight: 600;
   color: var(--primary-color);
+  border-radius: 0px;
+  transition: 0.5s ease;
 }
+
+.message-box .mess-box:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+/* ======= CSS Media Quary ======= */
+
+@media screen and (max-width: 280px) and (max-width: 540px) {
+}
+
+@media screen and (max-width: 540px) and (min-width: 680px) {
+}
+
+@media screen and (max-width: 680px) and (min-width: 840px) {
+}
+
+@media screen and (max-width: 840px) and (min-width: 1020px) {
+}
+
+@media screen and (max-width: 1020px) and (min-width: 1280px) {
+}
+
+/* ============CSS Media Quary End=========== */

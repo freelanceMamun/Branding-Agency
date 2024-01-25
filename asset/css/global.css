@@ -93,6 +93,9 @@ header {
 /* ======= CSS Media Quary ======= */
 
 @media screen and (max-width: 280px) and (max-width: 540px) {
+  .message-box .mess-box {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 540px) and (min-width: 680px) {

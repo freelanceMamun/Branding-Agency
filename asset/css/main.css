@@ -1,0 +1,18 @@
+/* === Hero  Area ====== */
+.branding-hero {
+  width: 100% !important;
+}
+.branding-hear-area {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.branding-slider img {
+  width: 100%;
+}
+.brading-left-side {
+  display: flex;
+  align-items: center;
+}
+
+/* Hero Area End */

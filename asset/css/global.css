@@ -40,6 +40,12 @@ header {
   color: #1d1d1d;
 }
 
+.title {
+  font-size: var(--heading-title);
+  color: #1d1d1d;
+  line-height: 64px;
+  font-weight: 600;
+}
 .peragraph-title {
   font-size: var(--paragraph-title);
   font-weight: 400;

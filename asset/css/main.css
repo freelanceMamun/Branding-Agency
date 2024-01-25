@@ -13,6 +13,43 @@
 .brading-left-side {
   display: flex;
   align-items: center;
+  position: relatives;
+}
+.branding-content {
+  display: flex;
+
+  padding-left: 200px;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
 }
 
+.brand-heading-contnet {
+  max-width: 40%;
+  border-left: 1px solid #cfcfcf;
+  padding-left: 50px;
+}
+.brand-subtitle {
+  padding-right: 50px;
+}
+
+.sm-sub-title {
+  line-height: 12px;
+  font-weight: 600;
+  width: max-content;
+  font-size: 12px;
+}
+
+.BRAK {
+  font-weight: 600;
+  line-height: 15px;
+  width: max-content;
+  transform: rotate(90deg);
+  margin-left: 3px;
+}
+
+.brand-heading-contnet .peragraph-title {
+  max-width: 60%;
+  margin: 60px 0;
+}
 /* Hero Area End */

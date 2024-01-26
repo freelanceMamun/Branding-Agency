@@ -52,4 +52,16 @@
   max-width: 60%;
   margin: 40px 0;
 }
+
+.branding-btn a {
+  background: linear-gradient(
+    to right top,
+
+    rgb(156, 50, 176) 50.63694267515923%,
+    rgb(96, 0, 255) 99.68152866242038%
+  );
+  padding: 12px 20px;
+  color: #fff;
+  border-radius: 2px;
+}
 /* Hero Area End */

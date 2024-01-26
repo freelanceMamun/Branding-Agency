@@ -82,6 +82,16 @@
         <div class="branding-hero">
           <div class="branding-hero-content row h-100 w-100 m-0">
             <div class="brading-left-side col-lg-5">
+              <div class="position-branding">
+                <img
+                  src="asset/pictures/demo-web-agency-03.png"
+                  class="animation-rotation"
+                  alt=""
+                />
+                <div class="absolute-middle-center w-100 z-index-minus-1">
+                  <img src="asset/pictures/demo-web-agency-02.png" alt="" />
+                </div>
+              </div>
               <div class="branding-content">
                 <div class="brand-subtitle">
                   <div class="d-flex flex-column">
@@ -163,8 +173,11 @@
     <footer></footer>
     <!-- ====== Footer End ====== -->
     <script src="asset/Js/jquery.min.js"></script>
+
     <!-- ==  gsap CDn === -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="asset/Js/main.js"></script>
 
@@ -178,6 +191,16 @@
 
       gsap
         .timeline()
+        .from('.position-branding', {
+          scale: 0.3,
+          duration: 1,
+          autoAlpha: 0,
+
+          stagger: function (index, target, list) {
+            // your custom logic here. Return the delay from the start (not between each)
+            return index * 0.5;
+          },
+        })
         .from('.title', {
           y: 100,
           opacity: 0,
@@ -211,7 +234,17 @@
             return index * 0.5;
           },
         });
+
       // ============  Hero banner animation  =======  //
+      gsap.registerPlugin(ScrollTrigger);
+
+      let tween = gsap.to('.position-branding', { x: 700, duration: 1.5 }),
+        st = ScrollTrigger.create({
+          trigger: '.trigger',
+          start: 5,
+          end: 10,
+          animation: tween,
+        });
     </script>
   </body>
 </html>

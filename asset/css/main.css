@@ -64,4 +64,20 @@
   color: #fff;
   border-radius: 2px;
 }
+
+.position-branding {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 2;
+}
+
+.animation-rotation {
+  position: absolute;
+}
+
+.animation-rotation,
+.page-loader::after {
+  -webkit-animation: rotation 8s infinite linear;
+}
 /* Hero Area End */

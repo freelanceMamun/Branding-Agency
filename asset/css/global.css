@@ -96,6 +96,21 @@ header {
   color: #fff;
 }
 
+#demo-text {
+  overflow: visible;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+}
+#demo-text span {
+  position: relative;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.anmiTitle {
+  font-size: 76px;
+}
 /* ======= CSS Media Quary ======= */
 
 @media screen and (max-width: 280px) and (max-width: 540px) {

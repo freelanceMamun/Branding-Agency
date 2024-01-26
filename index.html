@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+    /> -->
     <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
     <!-- ======  Google Fonts========= -->
     <link rel="stylesheet" href="asset/css/global.css" />
@@ -110,14 +114,17 @@
                   </div>
                 </div>
                 <div class="brand-heading-contnet">
-                  <h1 class="title">
-                    Provide branding solutions to grow your business.
-                  </h1>
-                  <p class="peragraph-title">
+                  <div class="">
+                    <h1 class="title">Provide branding</h1>
+                    <h1 class="title">solutions to grow</h1>
+                    <h1 class="title">your business.</h1>
+                  </div>
+                  <p class="peragraph-title" style="max-width: 40%">
                     Creating products with a strong identity. We provide
                     brilliant ideas and adding the world called success brand.
+                    We deliver customized marketing campaign to use your Brand
                   </p>
-                  <div class="branding-btn">
+                  <div class="branding-btn" id="start-anim">
                     <a href="#">Let's talk - Send a message</a>
                   </div>
                 </div>
@@ -155,7 +162,37 @@
     <!-- ====== Footer ====== -->
     <footer></footer>
     <!-- ====== Footer End ====== -->
+    <script src="asset/Js/jquery.min.js"></script>
+    <!-- ==  gsap CDn === -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="asset/Js/main.js"></script>
+
+    <script>
+      // ============  Hero banner animation  =======  //
+      gsap.from('.swiper-slide img', {
+        scale: 5,
+        x: 0,
+        duration: 2,
+      });
+      gsap.from('.title', {
+        y: 100,
+        opacity: 0,
+        duration: 1.5,
+        autoAlpha: 0,
+
+        stagger: function (index, target, list) {
+          // your custom logic here. Return the delay from the start (not between each)
+          return index * 0.5;
+        },
+      });
+      // ============  Hero banner animation  =======  //
+
+
+
+
+      
+    </script>
   </body>
 </html>

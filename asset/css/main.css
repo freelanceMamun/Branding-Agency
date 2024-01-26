@@ -25,7 +25,7 @@
 }
 
 .brand-heading-contnet {
-  max-width: 40%;
+  max-width: 75%;
   border-left: 1px solid #cfcfcf;
   padding-left: 50px;
 }
@@ -50,6 +50,6 @@
 
 .brand-heading-contnet .peragraph-title {
   max-width: 60%;
-  margin: 60px 0;
+  margin: 40px 0;
 }
 /* Hero Area End */

@@ -76,7 +76,7 @@
       </div>
     </header>
     <!-- ========= Header End ======= -->
-    <main>
+    <main id="wrapper-smooth">
       <!-- ======= Branding-hero-area ====== -->
       <section class="branding-hear-area">
         <div class="branding-hero">
@@ -168,12 +168,96 @@
         </div>
       </section>
       <!-- ======= Branding-hero-area End ====== -->
+      <!-- ===-====== Brand ============== ===== -->
+      <section class="brand">
+        <div class="container">
+          <div class="wrapper-brand">
+            <div class="row feather-shadow marquee-slide">
+              <div class="col-lg-2 col-md-3">
+                <div class="brand-img">
+                  <a href="#">
+                    <img src="asset/pictures/logo-walmart.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <div class="brand-img">
+                  <a href="#">
+                    <img src="asset/pictures/logo-paypal.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <div class="brand-img">
+                  <a href="#">
+                    <img src="asset/pictures/logo-monday.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <div class="brand-img">
+                  <a href="#">
+                    <img src="asset/pictures/logo-logitech.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <div class="brand-img">
+                  <a href="#">
+                    <img src="asset/pictures/logo-google.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <div class="brand-img">
+                  <a href="#">
+                    <img src="asset/pictures/logo-walmart.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===-====== Brand ==============  End ===== -->
 
       <!-- ====== About Section =====  -->
 
       <section class="branding-about">
         <div class="about-container">
-          <div class="container"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6"></div>
+              <div class="col-lg-6 col-md-6">
+                <div class="brand-about">
+                  <div
+                    class="brand-about-sm-title d-flex gap-2 align-items-center"
+                  >
+                    <span class="bar-sp"></span>
+                    <p class="text-gradient-base-color mb-0">
+                      ABOUT BRANDING AGENCY
+                    </p>
+                  </div>
+                  <div class="brand-about-heading">
+                    <h2 class="md-title">We provide brilliant ideas</h2>
+                    <h2 class="md-title">and adding the world called</h2>
+                    <h2 class="md-title">success to your brand.</h2>
+                  </div>
+                  <div class="about-sb-title">
+                    <p>
+                      Creating products with a strong identity. We provide
+                      brilliant ideas and adding the world called success brand.
+                      We deliver customized marketing campaign to use your
+                      audience to make a positive move.
+                    </p>
+                  </div>
+                  <div class="branding-btn">
+                    <a href="#">Let's talk - Send a message</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- ======= About Section end ========= -->
@@ -247,13 +331,15 @@
       // ============  Hero banner animation  =======  //
       gsap.registerPlugin(ScrollTrigger);
 
-      let tween = gsap.to('.position-branding', { x: 700, duration: 1.5 }),
-        st = ScrollTrigger.create({
-          trigger: '.trigger',
-          start: 5,
-          end: 10,
-          animation: tween,
-        });
+      // let tween = gsap.to('.position-branding', { x: 700, duration: 1.5 }),
+      //   st = ScrollTrigger.create({
+      //     trigger: '.trigger',
+      //     start: 'top center',
+      //     end: '+=200',
+      //     animation: tween,
+      //   });
+
+      // ========= Smooth Scroll animation
     </script>
   </body>
 </html>

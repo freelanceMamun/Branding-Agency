@@ -80,4 +80,35 @@
 .page-loader::after {
   -webkit-animation: rotation 8s infinite linear;
 }
+
+.brand {
+  margin: 140px 0;
+}
+
+.brand-img img {
+  height: 40px;
+}
+.brand-about-heading {
+  margin: 1.2rem 0;
+}
+
+.brand-about-heading .md-title {
+  margin-bottom: 0 !important;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+.brand-about-sm-title p {
+  font-weight: 600;
+}
+.about-sb-title {
+  margin: 2rem 0;
+}
+.bar-sp {
+  height: 2px;
+  background: #e97522;
+  display: block;
+  width: 30px;
+}
+
 /* Hero Area End */

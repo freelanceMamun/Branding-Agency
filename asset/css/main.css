@@ -54,15 +54,10 @@
 }
 
 .branding-btn a {
-  background: linear-gradient(
-    to right top,
-
-    rgb(156, 50, 176) 50.63694267515923%,
-    rgb(96, 0, 255) 99.68152866242038%
-  );
-  padding: 12px 20px;
+  padding: 15px 30px;
   color: #fff;
   border-radius: 2px;
+  background: #1d1d1d;
 }
 
 .position-branding {
@@ -82,12 +77,18 @@
 }
 
 .brand {
-  margin: 140px 0;
+  margin: 100px 0;
 }
 
 .brand-img img {
   height: 40px;
 }
+
+.about-container {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
 .brand-about-heading {
   margin: 1.2rem 0;
 }
@@ -109,6 +110,48 @@
   background: #e97522;
   display: block;
   width: 30px;
+}
+
+.brand-about {
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+.about-sb-title {
+  padding-right: 8.1rem;
+  margin-bottom: 3rem;
+}
+
+.about-sb-title p {
+  line-height: 30px;
+}
+.brand-about-img-container {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+}
+
+.brand-about-br-img:nth-child(1) {
+  height: 280px;
+}
+.brand-about-br-img:nth-child(1) img {
+  height: 100%;
+}
+
+.brand-about-br-img:nth-child(2) {
+  position: absolute;
+  height: 370px;
+  left: 120px;
+  top: 180px;
+}
+
+.brand-about-br-img:nth-child(2) img {
+  height: 100%;
+}
+.brand-about-br-img:nth-child(3) {
+  height: 330px;
+}
+.brand-about-br-img:nth-child(3) img {
+  height: 100%;
 }
 
 /* Hero Area End */

@@ -45,3 +45,46 @@ gsap.timeline().from('.md-title', {
     return index * 0.5;
   },
 });
+
+// ======
+
+const rows = document.querySelectorAll('.cb-tagreel-row');
+
+rows.forEach(function (e, i) {
+  let row_width = e.getBoundingClientRect().width;
+  let row_item_width = e.children[0].getBoundingClientRect().width;
+  let initial_offset = ((2 * row_item_width) / row_width) * 100 * -1;
+  let x_translation = initial_offset * -1;
+
+  gsap.set(e, {
+    xPercent: `${initial_offset}`,
+  });
+
+  let duration = 25 * (i + 2);
+
+  var tl = gsap.timeline();
+
+  tl.to(e, {
+    ease: 'none',
+    duration: duration,
+    xPercent: 0,
+    repeat: -1,
+  });
+});
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const textElements = gsap.utils.toArray('.text');
+
+// textElements.forEach((text) => {
+//   gsap.to(text, {
+//     backgroundSize: '100%',
+//     ease: 'none',
+//     scrollTrigger: {
+//       trigger: text,
+//       start: 'center 80%',
+//       end: 'center 20%',
+//       scrub: true,
+//     },
+//   });
+// });

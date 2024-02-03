@@ -155,3 +155,109 @@
 }
 
 /* Hero Area End */
+
+/* -======  brand Achievment ======= */
+
+.Achievement {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+
+.brand-achievent {
+  border-top: 1px solid #ddd;
+}
+
+.achievent-content {
+  padding-right: 6rem;
+  padding-top: 2rem;
+}
+.ach-line {
+}
+
+.round-up {
+  top: -15px;
+  position: relative;
+}
+
+.step-box {
+  border: 1px solid #cfcfcf;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots {
+  width: 7px;
+  height: 7px;
+  background: #000000;
+  border-radius: 50%;
+  display: block;
+}
+
+/*  */
+
+.cb-tagreel {
+  position: relative;
+}
+
+.cb-tagreel-content {
+  padding: 200px 0;
+}
+
+.cb-tagreel-items {
+  margin: -58px 0;
+  overflow: hidden;
+  cursor: default;
+}
+
+.cb-tagreel-row {
+  display: flex;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  gap: 40px;
+}
+
+.cb-tagreel-item {
+  position: relative;
+  line-height: 100%;
+  font-size: 3.75vw;
+  flex: 0 0 33%;
+
+  text-transform: uppercase;
+}
+.cb-tagreel-item .title-lg {
+  color: #1d1d1d;
+  font-size: 200px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.cb-tagreel-item.-stroke {
+  color: transparent;
+  text-shadow: none;
+}
+
+.cb-tagreel-item span {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.brand-services-container {
+  width: 100% !important;
+}
+
+/* Services */
+
+.services-img {
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  min-height: 1000px;
+  background-attachment: fixed;
+}

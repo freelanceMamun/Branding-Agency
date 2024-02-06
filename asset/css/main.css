@@ -254,10 +254,27 @@
 
 /* Services */
 
+.branding-services {
+  margin-top: 80px;
+}
+
 .services-img {
   background-position: center;
   background-repeat: none;
   background-size: cover;
   min-height: 1000px;
-  background-attachment: fixed;
+
+  width: 100%;
+}
+
+.show_agency_products {
+  width: 100%;
+  height: 900px;
+}
+.show_agency_products .agency__products {
+  height: 100%;
+}
+
+.show_agency_products .agency__products img {
+  height: 100%;
 }

@@ -263,7 +263,6 @@
   background-repeat: none;
   background-size: cover;
   min-height: 1000px;
-
   width: 100%;
 }
 
@@ -282,6 +281,7 @@
 
 .button-inner {
   position: relative;
+  height: 100%;
 }
 
 .button-inner .contact-hover {

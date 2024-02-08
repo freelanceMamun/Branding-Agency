@@ -43,7 +43,6 @@ rows.forEach(function (e, i) {
   let initial_offset = ((2 * row_item_width) / row_width) * 100 * -1;
   let x_translation = initial_offset * -1;
   // console.log(e.children[0].clientWidth);
-  console.log(x_translation);
 
   gsap.set(e, {
     xPercent: `${initial_offset}`,
@@ -59,4 +58,23 @@ rows.forEach(function (e, i) {
     xPercent: 0,
     repeat: -1,
   });
+});
+
+// ========= Section hover
+
+const contactbutton = document.querySelector('.contact-button');
+const card = document.querySelector('.card');
+card.addEventListener('mouseenter', (e) => {
+  contactbutton.classList.add('active-button');
+  
+});
+
+card.addEventListener('mouseleave', (e) => {
+  contactbutton.classList.remove('active-button');
+});
+
+card.addEventListener('mousemove', function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  contactbutton.style.transform = `translate3d(calc(${x}px - 50%), calc(${y}px - 50%), 0)  `;
 });

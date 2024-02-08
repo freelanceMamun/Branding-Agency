@@ -154,6 +154,10 @@ header {
   width: max-content;
 }
 
+.animation-rotation{
+
+}
+
 @keyframes rotation {
   0% {
     -webkit-transform: rotate(0);

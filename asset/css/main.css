@@ -337,6 +337,35 @@
   transform: rotate(-90deg);
 }
 
+/* ===  Businees-brand ====== */
+
+.Businees-brand {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.brand-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.brand-title span {
+  height: 2px;
+  display: inline-block;
+  background-color: #000000;
+  width: 20px;
+}
+.brand-title h5 {
+  margin: 15px 0;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.brand-main-title h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: rgb(29, 29, 29);
+}
+
 /* ==== */
 @keyframes rotation {
   0% {

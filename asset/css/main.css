@@ -301,21 +301,34 @@
   flex-direction: column;
   font-size: 1.3rem;
 }
+.branding-banner-img {
+  position: relative;
+}
 
 .contact-button {
-  transition: all 0.2s ease;
   position: absolute;
-  left: 0;
-  top: 0;
+  z-index: 99;
+  opacity: 1;
+  cursor: pointer;
   transform: scale(0);
-  z-index: 1;
-  opacity: 0;
+  left: 0%;
+  top: 0%;
 }
 
-.contact-button.active-button {
+.branding-img {
+  width: 100%;
+  height: 100%;
+}
+.branding-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* .contact-button.active-button {
   opacity: 1;
   transform: scale(1);
-}
+} */
+
 .cursor-follower {
   display: block;
   border-radius: 100%;
